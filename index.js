@@ -19,7 +19,7 @@ class IrppCalculator {
 		IrppCalculator.irppTable.forEach(({ g, p }, index) => {
 			let current_tax = 0;
 			if (this.currentSolde > g) {
-				current_tax = index == 4 ? (this.currentSolde / 100) * p : (g / 100) * p;
+				current_tax = index == 7 ? (this.currentSolde / 100) * p : (g / 100) * p;
 			} else {
 				current_tax = (this.currentSolde / 100) * p;
 			}
